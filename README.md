@@ -7,6 +7,7 @@
 
 <p>
     <b>The Admin Panel</b>
+    <br>
     A University Grading System written in Java and uses MySQL for data storage. GUI developed using JavaFX Library.<br>
     This application allows the Administrator to login and View and Add Student Grades manually. The GPA of each student and the eligibility of the student is automatically calculated when the grades are given as the input.<br>
     The administrator is supposed to input the marks for the core modules when they are adding a new student. They may add marks for the optional modules the student has taken and this is optional. The administrator is required to
@@ -19,12 +20,12 @@
     The Settings window allows the Administrator to change the password as well as the percentage of End of Examination and Continous Assesment marks that'll be considered when calculating the final grade.
     <br>
     <b>The Student Panel</b>
+    <br>
     The Student may also login to the application to view their module results. The Username for a student is their Student ID while the password should've been assigned manually by the lecturer.
     The Student, once logged in, will be able to utilize the search form to view their results. They may not edit the Text Field to change the Search value and look for the results of other students.
     Clicking on the [Search] button will display the GPA and the Student's Eligibility. The [Elaborate] button allows the student to view a detailed list of the modules the student has taken as well as the attendance, credits, marks, grade point, grade and whether the student has passed or failed the module.
     <br>
-
-    Both the Admin and Student may logout of the Application.
+    <i>Both the Admin and Student may logout of the Application.</i>
 </p>
 
 <br>
@@ -49,17 +50,32 @@
 <hr>
 <br>
 
-<img src='' alt=''><br>
-<img src='' alt=''><br>
-<img src='' alt=''><br>
-<img src='' alt=''><br>
-<img src='' alt=''><br>
-<img src='' alt=''><br>
-<img src='' alt=''><br>
-<img src='' alt=''><br>
-<img src='' alt=''><br>
-<img src='' alt=''><br>
-<img src='' alt=''><br>
-<img src='' alt=''><br>
-<img src='' alt=''><br>
-<img src='' alt=''><br>
+<img src='https://raw.githubusercontent.com/minojsos/Java-University-Grading-System/master/Screenshots/Login_Screen.png' alt='Login Screen'><br>
+<img src='https://raw.githubusercontent.com/minojsos/Java-University-Grading-System/master/Screenshots/Admin_Panel.png' alt='Admin Panel'><br>
+<img src='https://raw.githubusercontent.com/minojsos/Java-University-Grading-System/master/Screenshots/Search_Result_Screen.png' alt='Quick Search'><br>
+<img src='https://raw.githubusercontent.com/minojsos/Java-University-Grading-System/master/Screenshots/Search_Result_Elaborate_Screen_1000.png' alt='Elaborate Search result'><br>
+<img src='https://raw.githubusercontent.com/minojsos/Java-University-Grading-System/master/Screenshots/Add_Student_Screen.png' alt='Add New Student'><br>
+<img src='https://raw.githubusercontent.com/minojsos/Java-University-Grading-System/master/Screenshots/Preliminary_Module_Marks.png' alt='Preliminary Module Marks insertion - New Student'><br>
+<img src='https://raw.githubusercontent.com/minojsos/Java-University-Grading-System/master/Screenshots/Semester_One_Screen.png' alt='Semester I Marks insertion - New Student'><br>
+<img src='https://raw.githubusercontent.com/minojsos/Java-University-Grading-System/master/Screenshots/Semester_Two_Screen.png' alt='Semester II Marks insertion - New Student'><br>
+<img src='https://raw.githubusercontent.com/minojsos/Java-University-Grading-System/master/Screenshots/Settings_Screen.png' alt='Settings Screen'><br>
+<img src='https://raw.githubusercontent.com/minojsos/Java-University-Grading-System/master/Screenshots/View_All_Students_Screen.png' alt='View all Students Screen'><br>
+<img src='https://raw.githubusercontent.com/minojsos/Java-University-Grading-System/master/Screenshots/Student_Panel.png' alt='Student Panel'><br>
+<img src='https://raw.githubusercontent.com/minojsos/Java-University-Grading-System/master/Screenshots/Student_Panel_Search_Result.png' alt='Quick Search - Students Panel'><br>
+
+<br>
+
+<h3>Possible Improvements</h3>
+<hr>
+<br>
+<ul>
+    <li>Student ID automatically generated</li>
+    <li>Randomly generated password for students</li>
+    <li>View All Modules</li>
+    <li>Store all Student Marks in list until Admin confirms input. This allows the admin to cancel even after the marks has been input</li>
+    <li>Password Hashing</li>
+    <li>Student Panel displays all the modules elaborated directly</li>
+    <li><i><b>More will be added</b></i></li>
+</ul>
+
+<br>
