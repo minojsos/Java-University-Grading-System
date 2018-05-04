@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="660.0" prefWidth="958.0" style="-fx-border-color: white;" styleClass="background" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PreliminaryModuleMarksController">
+   <children>
+      <BorderPane prefHeight="683.0" prefWidth="958.0">
+         <top>
+            <VBox alignment="TOP_CENTER" prefHeight="80.0" prefWidth="1312.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label styleClass="label-header" text="Gugsi University of Computer Science">
+                     <font>
+                        <Font name="Segoe UI Semilight" size="48.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </top>
+         <center>
+            <AnchorPane prefHeight="877.0" prefWidth="1185.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="39.0" layoutY="14.0" styleClass="label-subHeader" text="Student Marks - Preliminary Modules">
+                     <font>
+                        <Font name="Segoe UI Semilight" size="36.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnSave" layoutX="866.0" layoutY="556.0" mnemonicParsing="false" onAction="#saveBtn" styleClass="button-logout" text="Save" />
+                  <VBox layoutX="39.0" layoutY="70.0" prefHeight="456.0" prefWidth="406.0" styleClass="pane-regular">
+                     <children>
+                        <HBox prefHeight="63.0" prefWidth="529.0">
+                           <children>
+                              <Label prefHeight="27.0" prefWidth="444.0" styleClass="label-text" text="            E.M.E      C.A       Hours    Grade" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="35.0" prefWidth="529.0">
+                           <children>
+                              <Label text="SC 411 : " />
+                              <TextField fx:id="sc411EME" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="4.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc411CA" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc411ATT" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc411G" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="35.0" prefWidth="529.0">
+                           <children>
+                              <Label text="SC 412 : " />
+                              <TextField fx:id="sc412EME" prefWidth="60.0" styleClass="textfield" />
+                              <TextField fx:id="sc412CA" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc412ATT" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc412G" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="35.0" prefWidth="529.0">
+                           <children>
+                              <Label text="SC 414 : " />
+                              <TextField fx:id="sc414EME" prefWidth="60.0" styleClass="textfield" />
+                              <TextField fx:id="sc414CA" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc414ATT" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc414G" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="35.0" prefWidth="529.0">
+                           <children>
+                              <Label text="SC 415 : " />
+                              <TextField fx:id="sc415EME" prefWidth="60.0" styleClass="textfield" />
+                              <TextField fx:id="sc415CA" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc415ATT" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc415G" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="35.0" prefWidth="529.0">
+                           <children>
+                              <Label text="SC 416 : " />
+                              <TextField fx:id="sc416EME" prefWidth="60.0" styleClass="textfield" />
+                              <TextField fx:id="sc416CA" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc416ATT" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc416G" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="35.0" prefWidth="529.0">
+                           <children>
+                              <Label text="SC 417 : " />
+                              <TextField fx:id="sc417EME" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc417CA" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc417ATT" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc417G" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="35.0" prefWidth="529.0">
+                           <children>
+                              <Label text="SC 418 : " />
+                              <TextField fx:id="sc418EME" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc418CA" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc418ATT" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc418G" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="35.0" prefWidth="529.0">
+                           <children>
+                              <Label fx:id="lblError" alignment="CENTER" prefHeight="25.0" prefWidth="385.0" styleClass="label-error" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+                  <Label layoutX="469.0" layoutY="70.0" text="E.M.E = End Of Module Examination" />
+                  <Label layoutX="469.0" layoutY="95.0" text="C.A. = Continous Assesment" />
+                  <Label layoutX="469.0" layoutY="120.0" text="Hours = Total Lecture Hours Attended by Student" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

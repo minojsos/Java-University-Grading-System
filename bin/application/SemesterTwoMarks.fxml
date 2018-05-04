@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="1009.0" prefWidth="769.0" style="-fx-border-color: white;" styleClass="background" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SemesterTwoMarksController">
+   <children>
+      <BorderPane prefHeight="1009.0" prefWidth="894.0">
+         <top>
+            <VBox alignment="TOP_CENTER" prefHeight="80.0" prefWidth="1312.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label styleClass="label-header" text="Gugsi University of Computer Science">
+                     <font>
+                        <Font name="Segoe UI Semilight" size="48.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </top>
+         <center>
+            <AnchorPane prefHeight="877.0" prefWidth="1185.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="39.0" layoutY="14.0" styleClass="label-subHeader" text="Student Marks &amp; Attendance - Semester II">
+                     <font>
+                        <Font name="Segoe UI Semilight" size="36.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnSave" layoutX="802.0" layoutY="865.0" mnemonicParsing="false" onAction="#saveBtn" styleClass="button-logout" text="Save" />
+                  <VBox layoutX="39.0" layoutY="82.0" prefHeight="688.0" prefWidth="397.0" styleClass="pane-regular">
+                     <children>
+                        <HBox prefHeight="63.0" prefWidth="529.0">
+                           <children>
+                              <Label styleClass="label-text" text="Core Modules" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="63.0" prefWidth="529.0">
+                           <children>
+                              <Label prefHeight="27.0" prefWidth="444.0" styleClass="label-text" text="            E.M.E      C.A       Hours      G.P." />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="35.0" prefWidth="529.0">
+                           <children>
+                              <Label text="SC 546 : " />
+                              <TextField fx:id="sc546EME" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc546CA" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc546ATT" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc546GRA" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="35.0" prefWidth="529.0">
+                           <children>
+                              <Label text="SC 554 : " />
+                              <TextField fx:id="sc554EME" prefWidth="60.0" styleClass="textfield" />
+                              <TextField fx:id="sc554CA" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc554ATT" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc554GRA" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="35.0" prefWidth="529.0">
+                           <children>
+                              <Label text="SC 555 : " />
+                              <TextField fx:id="sc555EME" prefWidth="60.0" styleClass="textfield" />
+                              <TextField fx:id="sc555CA" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc555ATT" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc555GRA" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="25.0" prefWidth="319.0">
+                           <children>
+                              <Label />
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label styleClass="label-text" text="Optional Modules" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="63.0" prefWidth="529.0">
+                           <children>
+                              <Label prefHeight="27.0" prefWidth="444.0" styleClass="label-text" text="                 E.M.E      C.A       Hours    G.P." />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="35.0" prefWidth="529.0">
+                           <children>
+                              <CheckBox fx:id="sc547" mnemonicParsing="false" onAction="#checkBoxSelected" styleClass="label-bright" text="SC 547 : " />
+                              <TextField fx:id="sc547EME" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc547CA" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc547ATT" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc547GRA" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="35.0" prefWidth="529.0">
+                           <children>
+                              <CheckBox fx:id="sc548" mnemonicParsing="false" onAction="#checkBoxSelected" styleClass="label-bright" text="SC 548 : " />
+                              <TextField fx:id="sc548EME" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc548CA" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc548ATT" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc548GRA" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="35.0" prefWidth="529.0">
+                           <children>
+                              <CheckBox fx:id="sc549" mnemonicParsing="false" onAction="#checkBoxSelected" styleClass="label-bright" text="SC 549 : " />
+                              <TextField fx:id="sc549EME" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc549CA" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc549ATT" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc549GRA" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="35.0" prefWidth="529.0">
+                           <children>
+                              <CheckBox fx:id="sc550" mnemonicParsing="false" onAction="#checkBoxSelected" styleClass="label-bright" text="SC 550 : " />
+                              <TextField fx:id="sc550EME" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc550CA" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc550ATT" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc550GRA" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="35.0" prefWidth="529.0">
+                           <children>
+                              <CheckBox fx:id="sc551" mnemonicParsing="false" onAction="#checkBoxSelected" styleClass="label-bright" text="SC 551 : " />
+                              <TextField fx:id="sc551EME" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="8.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc551CA" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc551ATT" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc551GRA" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="35.0" prefWidth="529.0">
+                           <children>
+                              <CheckBox fx:id="sc552" mnemonicParsing="false" onAction="#checkBoxSelected" styleClass="label-bright" text="SC 552 : " />
+                              <TextField fx:id="sc552EME" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc552CA" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="6.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc552ATT" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="6.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc552GRA" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="35.0" prefWidth="529.0">
+                           <children>
+                              <CheckBox fx:id="sc553" mnemonicParsing="false" onAction="#checkBoxSelected" styleClass="label-bright" text="SC 553 : " />
+                              <TextField fx:id="sc553EME" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc553CA" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc553ATT" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc553GRA" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="35.0" prefWidth="529.0">
+                           <children>
+                              <CheckBox fx:id="sc556" mnemonicParsing="false" onAction="#checkBoxSelected" styleClass="label-bright" text="SC 556 : " />
+                              <TextField fx:id="sc556EME" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc556CA" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc556ATT" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc556GRA" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+                  <VBox layoutX="464.0" layoutY="82.0" prefHeight="401.0" prefWidth="398.0" styleClass="pane-regular">
+                     <children>
+                        <HBox prefHeight="39.0" prefWidth="319.0">
+                           <children>
+                              <Label />
+                              <HBox prefHeight="22.0" prefWidth="182.0">
+                                 <children>
+                                    <Label styleClass="label-text" text="Optional Modules" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="35.0" prefWidth="319.0">
+                           <children>
+                              <Label prefHeight="27.0" prefWidth="444.0" styleClass="label-text" text="                  E.M.E      C.A       Hours   G.P." />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="35.0" prefWidth="529.0">
+                           <children>
+                              <CheckBox fx:id="sc557" mnemonicParsing="false" onAction="#checkBoxSelected" styleClass="label-bright" text="SC 557 : " />
+                              <TextField fx:id="sc557EME" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="9.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc557CA" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc557ATT" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc557GRA" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="35.0" prefWidth="529.0">
+                           <children>
+                              <CheckBox fx:id="sc558" mnemonicParsing="false" onAction="#checkBoxSelected" styleClass="label-bright" text="SC 558 : " />
+                              <TextField fx:id="sc558EME" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="9.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc558CA" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc558ATT" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc558GRA" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="35.0" prefWidth="529.0">
+                           <children>
+                              <CheckBox fx:id="sc559" mnemonicParsing="false" onAction="#checkBoxSelected" styleClass="label-bright" text="SC 559 : " />
+                              <TextField fx:id="sc559EME" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="9.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc559CA" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc559ATT" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc559GRA" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="35.0" prefWidth="529.0">
+                           <children>
+                              <CheckBox fx:id="sc560" mnemonicParsing="false" onAction="#checkBoxSelected" styleClass="label-bright" text="SC 560 : " />
+                              <TextField fx:id="sc560EME" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="9.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc560CA" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc560ATT" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc560GRA" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="85.0" prefWidth="319.0">
+                           <children>
+                              <CheckBox fx:id="sc561" mnemonicParsing="false" onAction="#checkBoxSelected" styleClass="label-bright" text="SC 561 : " />
+                              <TextField fx:id="sc561EME" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="12.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc561CA" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc561ATT" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc561GRA" editable="false" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="63.0" prefWidth="529.0">
+                           <children>
+                              <Label prefHeight="27.0" prefWidth="444.0" styleClass="label-text" text="            E.M.E      C.A       Hours      Grade" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="35.0" prefWidth="529.0">
+                           <children>
+                              <Label text="SC 597 : " />
+                              <TextField fx:id="sc597EME" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin></TextField>
+                              <TextField fx:id="sc597CA" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc597ATT" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc597GRA" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="70.0" prefWidth="375.0">
+                           <children>
+                              <Label fx:id="lblError" alignment="CENTER" prefHeight="25.0" prefWidth="375.0" styleClass="label-error" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+                  <Label layoutX="464.0" layoutY="488.0" text="E.M.E = End Of Module Examination" />
+                  <Label layoutX="464.0" layoutY="513.0" text="C.A. = Continous Assesment" />
+                  <Label layoutX="464.0" layoutY="538.0" text="Hours = Total Lecture Hours Attended by Student" />
+                  <Label layoutX="464.0" layoutY="563.0" text="G.P. = Grade Point" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane prefHeight="500.0" prefWidth="750.0" styleClass="background" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <top>
+      <Label styleClass="label-header" text="Gugsi University of Computer Sciences" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Segoe UI Semilight" size="36.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets top="50.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <center>
+      <GridPane alignment="CENTER_LEFT" maxHeight="-Infinity" prefHeight="175.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="341.0" minWidth="10.0" prefWidth="297.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="404.0" minWidth="10.0" prefWidth="403.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="276.0" minHeight="10.0" prefHeight="200.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="304.0" minHeight="10.0" prefHeight="197.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label styleClass="label-bright" text="Username">
+               <font>
+                  <Font name="Segoe UI Semilight" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="200.0" />
+               </GridPane.margin>
+            </Label>
+            <Label styleClass="label-bright" text="Password" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Segoe UI Semilight" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="200.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="txtUsername" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="230.0" promptText="Enter your username" styleClass="textfield" GridPane.columnIndex="1" />
+            <PasswordField fx:id="txtPassword" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="230.0" promptText="Enter your Password" styleClass="textfield" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+   </center>
+   <bottom>
+      <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#login" onKeyPressed="#login" styleClass="button-login" text="Login" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="75.0" />
+         </BorderPane.margin>
+         <font>
+            <Font name="Segoe UI Semilight" size="18.0" />
+         </font>
+      </Button>
+   </bottom>
+</BorderPane>

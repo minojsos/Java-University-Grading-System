@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="566.0" prefWidth="839.0" styleClass="background" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SettingsController">
+   <children>
+      <BorderPane prefHeight="617.0" prefWidth="839.0">
+         <top>
+            <VBox alignment="TOP_CENTER" prefHeight="80.0" prefWidth="1312.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label styleClass="label-header" text="Gugsi University of Computer Science">
+                     <font>
+                        <Font name="Segoe UI Semilight" size="48.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </top>
+         <center>
+            <AnchorPane prefHeight="419.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="39.0" layoutY="32.0" styleClass="label-subHeader" text="Settings">
+                     <font>
+                        <Font name="Segoe UI Semilight" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="39.0" layoutY="99.0" styleClass="label-text" text="You are allowed to change certain values used in the program here.">
+                     <font>
+                        <Font name="Segoe UI Semilight" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnSave" layoutX="747.0" layoutY="490.0" mnemonicParsing="false" onAction="#saveBtn" styleClass="button-logout" text="Save" />
+                  <Label layoutX="275.0" layoutY="249.0" prefHeight="25.0" prefWidth="46.0" />
+                  <Label layoutX="274.0" layoutY="274.0" prefHeight="25.0" prefWidth="47.0" />
+                  <VBox layoutX="39.0" layoutY="175.0" prefHeight="260.0" prefWidth="569.0" styleClass="pane-regular">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="63.0" prefWidth="529.0">
+                           <children>
+                              <Label styleClass="label-text" text="End of Module Examination : " />
+                              <TextField fx:id="endOfMod" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="25.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="63.0" prefWidth="529.0">
+                           <children>
+                              <Label styleClass="label-text" text="Continous Assesments : " />
+                              <TextField fx:id="contAsses" editable="false" style="-fx-text-fill: gray;" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="65.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="63.0" prefWidth="529.0">
+                           <children>
+                              <Label styleClass="label-text" text="Administrator Password : " />
+                              <PasswordField fx:id="password" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="56.0" />
+                                 </HBox.margin>
+                              </PasswordField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="55.0" prefWidth="547.0">
+                           <children>
+                              <Label fx:id="lblError" alignment="CENTER" prefHeight="25.0" prefWidth="550.0" styleClass="label-error" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="730.0" prefWidth="1099.0" styleClass="background" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InDetailsController">
+   <children>
+      <BorderPane prefHeight="898.0" prefWidth="1127.0">
+         <top>
+            <VBox alignment="TOP_CENTER" prefHeight="80.0" prefWidth="1312.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label styleClass="label-header" text="Gugsi University of Computer Science">
+                     <font>
+                        <Font name="Segoe UI Semilight" size="48.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </top>
+         <center>
+            <AnchorPane prefHeight="419.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="tableEnrollment" layoutX="81.0" layoutY="175.0" prefHeight="590.0" prefWidth="967.0">
+                    <columns>
+                      <TableColumn fx:id="columnModCode" prefWidth="145.0" text="Mod Code" />
+                      <TableColumn fx:id="columnMarks" minWidth="0.0" prefWidth="120.0" text="Marks" />
+                        <TableColumn fx:id="columnAttendance" minWidth="0.0" prefWidth="147.0" text="Attendance" />
+                        <TableColumn fx:id="columnCredits" minWidth="0.0" prefWidth="97.0" text="Credits" />
+                        <TableColumn fx:id="columnGP" minWidth="0.0" prefWidth="162.0" text="Grade Point" />
+                        <TableColumn fx:id="columnPass" minWidth="0.0" prefWidth="151.0" text="Pass Or Fail" />
+                        <TableColumn fx:id="columnGrade" minWidth="0.0" prefWidth="151.0" text="Grade" />
+                    </columns>
+                  </TableView>
+                  <Pane layoutX="83.0" layoutY="28.0" prefHeight="119.0" prefWidth="962.0" style="-fx-border-color: black;" styleClass="pane-regular">
+                     <children>
+                        <VBox layoutX="2.0" prefHeight="121.0" prefWidth="960.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="960.0">
+                                 <children>
+                                    <Label text="Student Name : " />
+                                    <Label fx:id="lblName" prefHeight="25.0" prefWidth="370.0">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label text="GPA : " />
+                                    <Label fx:id="lblGPA" prefHeight="25.0" prefWidth="389.0">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="42.0" prefWidth="960.0">
+                                 <children>
+                                    <Label text="Eligible : " />
+                                    <Label fx:id="lblEligible" prefHeight="25.0" prefWidth="852.0">
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

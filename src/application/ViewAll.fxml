@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="730.0" prefWidth="1099.0" styleClass="background" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ViewAllController">
+   <children>
+      <BorderPane prefHeight="898.0" prefWidth="1127.0">
+         <top>
+            <VBox alignment="TOP_CENTER" prefHeight="80.0" prefWidth="1312.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label styleClass="label-header" text="Gugsi University of Computer Science">
+                     <font>
+                        <Font name="Segoe UI Semilight" size="48.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </top>
+         <center>
+            <AnchorPane prefHeight="419.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="tableStudents" layoutX="80.0" layoutY="39.0" prefHeight="629.0" prefWidth="967.0">
+                    <columns>
+                      <TableColumn fx:id="columnID" prefWidth="145.0" text="Student ID" />
+                      <TableColumn fx:id="columnName" minWidth="0.0" prefWidth="208.0" text="Student Name" />
+                        <TableColumn fx:id="columnGPA" minWidth="0.0" prefWidth="111.0" text="GPA" />
+                        <TableColumn fx:id="columnEligible" minWidth="0.0" prefWidth="491.0" text="Eligibility" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

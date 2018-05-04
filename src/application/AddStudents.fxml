@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="746.0" prefWidth="974.0" style="-fx-border-color: white;" styleClass="background" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddStudentsController">
+   <children>
+      <BorderPane prefHeight="752.0" prefWidth="974.0">
+         <top>
+            <VBox alignment="TOP_CENTER" prefHeight="80.0" prefWidth="1312.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label styleClass="label-header" text="Gugsi University of Computer Science">
+                     <font>
+                        <Font name="Segoe UI Semilight" size="48.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </top>
+         <center>
+            <AnchorPane prefHeight="672.0" prefWidth="999.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="39.0" layoutY="14.0" styleClass="label-subHeader" text="Add Student(s)">
+                     <font>
+                        <Font name="Segoe UI Semilight" size="36.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnFinish" layoutX="874.0" layoutY="615.0" mnemonicParsing="false" onAction="#finishBtn" styleClass="button-logout" text="Finish" />
+                  <Button fx:id="btnNext" layoutX="773.0" layoutY="615.0" mnemonicParsing="false" onAction="#nextBtn" styleClass="button-logout" text="Next" />
+                  <VBox layoutX="39.0" layoutY="111.0" prefHeight="531.0" prefWidth="523.0" styleClass="pane-regular">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+                           <children>
+                              <Label text="Student ID : " />
+                              <TextField fx:id="studentID" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="28.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+                           <children>
+                              <Label text="Student Name : " />
+                              <TextField fx:id="studentName" styleClass="textfield" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+                           <children>
+                              <Label text="Password : " />
+                              <PasswordField fx:id="studentPassword" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="35.0" />
+                                 </HBox.margin>
+                              </PasswordField>
+                           </children>
+                        </HBox>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="546.0" styleClass="label-text" text="                                E.M.E      C.A       Hours    Grade" />
+                        <HBox prefHeight="35.0" prefWidth="529.0">
+                           <children>
+                              <Label text="SC 598 (Industrial Project) : " />
+                              <TextField fx:id="sc598EME" prefWidth="60.0" styleClass="textfield" />
+                              <TextField fx:id="sc598CA" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc598ATT" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc598GP" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="35.0" prefWidth="529.0">
+                           <children>
+                              <Label text="SC 599 (Research Project) : " />
+                              <TextField fx:id="sc599EME" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="3.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc599CA" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc599ATT" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="sc599GP" maxHeight="-Infinity" prefWidth="60.0" styleClass="textfield">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+                           <children>
+                              <Button fx:id="modPreliminary" mnemonicParsing="false" onAction="#preliminaryBtn" text="Preliminary Modules" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+                           <children>
+                              <Button fx:id="modSemOne" mnemonicParsing="false" onAction="#semesterOneBtn" text="Semester I" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+                           <children>
+                              <Button fx:id="modSemTwo" mnemonicParsing="false" onAction="#semesterTwoBtn" text="Semester II" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+                           <children>
+                              <Label fx:id="lblError" alignment="CENTER" prefHeight="25.0" prefWidth="455.0" styleClass="label-error" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+                  <Button fx:id="btnExit" layoutX="681.0" layoutY="615.0" mnemonicParsing="false" onAction="#exitBtn" styleClass="button-logout" text="Exit" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

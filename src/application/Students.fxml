@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="730.0" prefWidth="1099.0" styleClass="background" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StudentsController">
+   <children>
+      <BorderPane prefHeight="898.0" prefWidth="1127.0">
+         <top>
+            <VBox alignment="TOP_CENTER" prefHeight="80.0" prefWidth="1312.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label styleClass="label-header" text="Gugsi University of Computer Science">
+                     <font>
+                        <Font name="Segoe UI Semilight" size="48.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </top>
+         <center>
+            <AnchorPane prefHeight="818.0" prefWidth="960.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="lblWelcome" layoutX="39.0" layoutY="32.0" styleClass="label-subHeader">
+                     <font>
+                        <Font name="Segoe UI Semilight" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="38.0" layoutY="88.0" styleClass="label-text" text="View your details here">
+                     <font>
+                        <Font name="Segoe UI Semilight" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnLogout" layoutX="1013.0" layoutY="761.0" mnemonicParsing="false" onAction="#logout" styleClass="button-logout" text="Logout" />
+                  <Label layoutX="38.0" layoutY="110.0" styleClass="label-text" text="Please report if you find any invalid information">
+                     <font>
+                        <Font name="Segoe UI Semilight" size="18.0" />
+                     </font>
+                  </Label>
+                  <VBox alignment="CENTER_LEFT" layoutX="953.0" layoutY="35.0" prefHeight="140.0" prefWidth="154.0" spacing="25.0" />
+                  <HBox layoutX="38.0" layoutY="409.0" prefHeight="33.0" prefWidth="509.0" spacing="50.0" />
+                  <Pane layoutX="38.0" layoutY="152.0" prefHeight="642.0" prefWidth="592.0" styleClass="pane-regular">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="228.0" prefWidth="592.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="119.0" prefWidth="383.0" spacing="25.0">
+                                 <children>
+                                    <Label styleClass="label-text" text="Student ID : " />
+                                    <TextField fx:id="txtStudentID" editable="false" prefHeight="14.0" prefWidth="208.0" styleClass="textfield" text="1000" />
+                                 </children>
+                              </HBox>
+                              <Button fx:id="btnSearch" mnemonicParsing="false" onAction="#search" text="Search" />
+                           </children>
+                        </VBox>
+                        <Pane layoutX="5.0" layoutY="228.0" prefHeight="407.0" prefWidth="583.0" style="-fx-background-color: derive(#1d1d1d,40%);">
+                           <children>
+                              <VBox prefHeight="408.0" prefWidth="582.0">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="74.0" prefWidth="425.0">
+                                       <children>
+                                          <Label styleClass="label-text" text="Student Name : " />
+                                          <Label fx:id="lblStuName" prefHeight="25.0" prefWidth="441.0" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="74.0" prefWidth="425.0">
+                                       <children>
+                                          <Label styleClass="label-text" text="GPA : " />
+                                          <Label fx:id="lblStuGPA" prefHeight="25.0" prefWidth="512.0" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="74.0" prefWidth="425.0">
+                                       <children>
+                                          <Label styleClass="label-text" text="Eligibility : " />
+                                          <Label fx:id="lblStuEligible" prefHeight="25.0" prefWidth="481.0" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="74.0" prefWidth="425.0">
+                                       <children>
+                                          <Label fx:id="lblError" styleClass="label-error" />
+                                       </children></HBox>
+                                    <HBox prefHeight="74.0" prefWidth="425.0" />
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="59.0" prefWidth="506.0">
+                                       <children>
+                                          <Button fx:id="btnElaborate" mnemonicParsing="false" onAction="#elaborate" text="Elaborate">
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </Button>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets right="25.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
